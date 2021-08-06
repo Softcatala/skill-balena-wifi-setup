@@ -17,7 +17,7 @@ class WifiConnect(MycroftSkill):
         self.wifi_process = None
         self.debug = False  # dev setting, VERY VERBOSE DIALOGS
         # TODO expose all this in skill settings
-        self.ssid = "OVOS"
+        self.ssid = "TIO_SOFTCATALA"
         self.pswd = None
         self.grace_period = 45
         self.time_between_checks = 30  # seconds
