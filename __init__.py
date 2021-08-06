@@ -251,7 +251,7 @@ class WifiConnect(MycroftSkill):
         self.gui.clear()
         if state == "join-ap" and page_type == "prompt":
             self.gui["image"] = "1_phone_connect-to-ap.png"
-            self.gui["label"] = "Connecteu a la xarxa Wi-Fi"
+            self.gui["label"] = "Connexió a la xarxa Wi-Fi"
             self.gui["highlight"] = self.ssid
             self.gui["color"] = self.settings["color"]
             self.gui["page_type"] = "Prompt"
@@ -272,7 +272,7 @@ class WifiConnect(MycroftSkill):
             self.gui.show_page("NetworkLoader.qml", override_animations=True)
         elif state == "setup-failed" and page_type == "status":
             self.gui["image"] = "icons/times-circle.svg"
-            self.gui["label"] = "La connecxió ha fallat"
+            self.gui["label"] = "La connexió ha fallat"
             self.gui["highlight"] = ""
             self.gui["color"] = "#FF0000"
             self.gui["page_type"] = "Status"
