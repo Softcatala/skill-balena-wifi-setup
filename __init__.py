@@ -251,28 +251,28 @@ class WifiConnect(MycroftSkill):
         self.gui.clear()
         if state == "join-ap" and page_type == "prompt":
             self.gui["image"] = "1_phone_connect-to-ap.png"
-            self.gui["label"] = "Connect to the Wi-Fi network"
+            self.gui["label"] = "Connecteu a la xarxa Wi-Fi"
             self.gui["highlight"] = self.ssid
             self.gui["color"] = self.settings["color"]
             self.gui["page_type"] = "Prompt"
             self.gui.show_page("NetworkLoader.qml", override_animations=True)
         elif state == "select-network" and page_type == "prompt":
             self.gui["image"] = "3_phone_choose-wifi.png"
-            self.gui["label"] = "Select local Wi-Fi network to connect"
+            self.gui["label"] = "Seleccioneu la xarxa local Wi-Fi on connectar"
             self.gui["highlight"] = "OVOS Device"
             self.gui["color"] = self.settings["color"]
             self.gui["page_type"] = "Prompt"
             self.gui.show_page("NetworkLoader.qml", override_animations=True)
         elif state == "setup-completed" and page_type == "status":
             self.gui["image"] = "icons/check-circle.svg"
-            self.gui["label"] = "Connected"
+            self.gui["label"] = "S'ha connectat"
             self.gui["highlight"] = ""
             self.gui["color"] = "#40DBB0"
             self.gui["page_type"] = "Status"
             self.gui.show_page("NetworkLoader.qml", override_animations=True)
         elif state == "setup-failed" and page_type == "status":
             self.gui["image"] = "icons/times-circle.svg"
-            self.gui["label"] = "Connection Failed"
+            self.gui["label"] = "La connecxió ha fallat"
             self.gui["highlight"] = ""
             self.gui["color"] = "#FF0000"
             self.gui["page_type"] = "Status"
